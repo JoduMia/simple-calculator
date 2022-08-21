@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    color: {
+                        clifford: '#22252d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="flex items-center justify-center bg-violet-900 h-screen">
+        <div>
+            <div>
+                <input id="screen" type="text" class="w-full h-28 bg-black px-2 py-6 text-right text-white font-bold focus:outline-none text-xl rounded-t-md pointer-events-none">
+            </div>
+            <div class="rounded-b-md bg-gray-800 p-3 space-y-2">
+                <div class="grid grid-cols-4 space-x-2">
+                    <button class="btn bg-yellow-400 p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="*">*</button>
+                    <button class="btn bg-yellow-400 p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="/">/</button>
+                    <button class="btn bg-yellow-400 p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="+">+</button>
+                    <button class="btn bg-yellow-400 p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="-">-</button>
+                </div>
+
+                <div class="grid grid-cols-4 space-x-2">
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="9">9</button>
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="8">8</button>
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="7">7</button>
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="6">6</button>
+                </div>
+
+                <div class="grid grid-cols-4 space-x-2">
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="5">5</button>
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="4">4</button>
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="3">3</button>
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="2">2</button>
+                </div>
+
+                <div class="grid grid-cols-4 space-x-2">
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="2">1</button>
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="0">0</button>
+                    <button class="btn bg-white p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num=".">.</button>
+                    <button class="btn-equal bg-green-500 p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-red-700" data-num="=">=</button>
+                </div>
+
+                <div class="grid grid-cols-4 space-x-2">
+                    <button class="btn-clear bg-red-700 p-4 rounded leading-none hover:bg-gray-700 duration-300 font-bold text-2xl text-center text-black">C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
